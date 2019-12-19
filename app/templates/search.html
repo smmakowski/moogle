@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>{{ q }} - Moogle Search</title>
+    </head>
+    <body>
+        <div>
+            <h6><span>M</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>e</h6>
+            <form>
+                <input type="text" />
+            </form>
+            <div>
+                <ul>
+                    <li>PLACEHOLDER</li>
+                </ul>
+                <button>Sign in</button>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div>
+            {% if results %}
+                {% for result in results %}
+                <p>result found!</p>
+                {% endfor %}
+            {% else %}
+            <p>No Results Found!</p>
+            {% endif %}
+        </div>
+        <div>
+            <p>PLACEHOLDER FOR LOCATION INFO? - Based on your past activity - Use Precise Location - Learn More</p>
+            <ul>
+                <li>Help</li>
+                <li>Send feedback</li>
+                <li>privacy</li>
+                <li>Terms</li>
+            </ul>
+        </div>
+    </body>
+</html>
